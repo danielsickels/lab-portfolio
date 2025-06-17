@@ -29,6 +29,12 @@ Joins two networks that utilize different primary protocols. Serves as an exit a
 - All data should go through a gate before being routed (some examples before leaving are NAT, protocol conversions, security filtering).
 -The only data traffic that does not go through a gate might be that among nodes on the same LAN.
 
+## Subnet
+
+A "Subnetwork" is a group of devices, or IP addresses, which share a common piece of a main IP address. 
+- Offers local traffic to be quick, organized, and easy to be managed by being self contained.
+- When data needs sent out if the subnet, it gives it to the router, which forwards the data appropriately.
+
 ### Key Terms
 
 | Term | Description |
