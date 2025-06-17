@@ -4,7 +4,7 @@ A quick-reference guide to two fundamental networking devices—**switches** and
 
 ---
 
-## 🌐 Switch (Networking Hub)
+## Switch (Networking Hub)
 
 A switch connects devices **within** a single computer network.  
 It uses **packet switching** to receive data and forward it to the proper destination device.
@@ -15,7 +15,7 @@ It uses **packet switching** to receive data and forward it to the proper destin
 
 ---
 
-## 🚏 Router
+## Router
 
 A router connects **multiple networks** together—think of it as the highway system linking separate cities.
 
@@ -23,16 +23,20 @@ A router connects **multiple networks** together—think of it as the highway sy
 - Lets many devices on the same local network share a single upstream connection (e.g., your home Wi-Fi).  
 - Maintains routing tables, applies policies (NAT, ACLs), and can segment traffic for security or performance.
 
+## Gateway
+
+Joins two networks that utilize different primary protocols. Serves as an exit and entry point.
+- All data should go through a gate before being routed (some examples before leaving are NAT, protocol conversions, security filtering).
+-The only data traffic that does not go through a gate might be that among nodes on the same LAN.
+
 ### Key Terms
 
 | Term | Description |
 |------|-------------|
 | **LAN** (Local Area Network) | A group of interconnected devices confined to a limited geographic area (office, home, campus). |
 | **WAN** (Wide Area Network) | Multiple LANs linked over large distances, often via leased lines or public links (the Internet). |
+| **Home "Default Gateway"** | Your broadband router takes private 192.168.x.x traffic, translates it (NAT) to a public IP, and puts it on the Internet |
+| **VoIP Gateway** | Converts phone calls between traditional land-line signaling and modern IP packets. |
+| **API gateway** | Accepts external HTTPS requests, adds security/policy layers, then speaks a different internal micro-service protocol. |
 
 ---
-
-> **Tip:** When planning a network, remember the simple rule of thumb:  
-> *Switches build **networks***, while *routers **connect** them.*
-
-Happy labbing!
