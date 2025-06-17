@@ -38,5 +38,6 @@ Joins two networks that utilize different primary protocols. Serves as an exit a
 | **Home "Default Gateway"** | Your broadband router takes private 192.168.x.x traffic, translates it (NAT) to a public IP, and puts it on the Internet |
 | **VoIP Gateway** | Converts phone calls between traditional land-line signaling and modern IP packets. |
 | **API gateway** | Accepts external HTTPS requests, adds security/policy layers, then speaks a different internal micro-service protocol. |
+| **Subnet** | A contiguous block of IP addresses that share the same network prefix (defined by a subnet mask / CIDR length); all hosts within that block belong to the same Layer-2 broadcast domain and can reach each other directly without traversing a router. |
 
 ---
