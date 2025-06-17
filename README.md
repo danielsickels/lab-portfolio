@@ -46,6 +46,10 @@ A "Subnetwork" is a group of devices, or IP addresses, which share a common piec
 32-bit value to distinguish the host value from the network address within an IP address. It is the last part if the IP address, the 0 in "255.255.255.0".
 - Slash (CIDR) form, like /24, is just a shorthand that says “the first 24 bits are network.”
 
+---
+
+##
+
 ## Key Terms
 
 | Term | Description |
