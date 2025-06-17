@@ -41,7 +41,12 @@ A "Subnetwork" is a group of devices, or IP addresses, which share a common piec
 
 ---
 
-### Key Terms
+## Subnet Mask
+
+32-bit value to distinguish the host value from the network address within an IP address. It is the last part if the IP address, the 0 in "255.255.255.0".
+- Slash (CIDR) form, like /24, is just a shorthand that says “the first 24 bits are network.”
+
+## Key Terms
 
 | Term | Description |
 |------|-------------|
@@ -51,5 +56,6 @@ A "Subnetwork" is a group of devices, or IP addresses, which share a common piec
 | **VoIP Gateway** | Converts phone calls between traditional land-line signaling and modern IP packets. |
 | **API gateway** | Accepts external HTTPS requests, adds security/policy layers, then speaks a different internal micro-service protocol. |
 | **Subnet** | A contiguous block of IP addresses that share the same network prefix (defined by a subnet mask / CIDR length); all hosts within that block belong to the same Layer-2 broadcast domain and can reach each other directly without traversing a router. |
+| **Subnet Mask** | A subnet mask is a 32-bit pattern marking the network bits of an IPv4 address, letting devices decide if traffic stays local or goes to a router. |
 
 ---
