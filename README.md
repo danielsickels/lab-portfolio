@@ -23,17 +23,23 @@ A router connects **multiple networks** together—think of it as the highway sy
 - Lets many devices on the same local network share a single upstream connection (e.g., your home Wi-Fi).  
 - Maintains routing tables, applies policies (NAT, ACLs), and can segment traffic for security or performance.
 
+---
+
 ## Gateway
 
 Joins two networks that utilize different primary protocols. Serves as an exit and entry point.
 - All data should go through a gate before being routed (some examples before leaving are NAT, protocol conversions, security filtering).
 -The only data traffic that does not go through a gate might be that among nodes on the same LAN.
 
+---
+
 ## Subnet
 
 A "Subnetwork" is a group of devices, or IP addresses, which share a common piece of a main IP address. 
 - Offers local traffic to be quick, organized, and easy to be managed by being self contained.
 - When data needs sent out if the subnet, it gives it to the router, which forwards the data appropriately.
+
+---
 
 ### Key Terms
 
