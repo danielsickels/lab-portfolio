@@ -1,7 +1,5 @@
 # Lab Portfolio
 
-
-
 ## Switch (Networking Hub)
 
 A switch connects devices **within** a single computer network.  
