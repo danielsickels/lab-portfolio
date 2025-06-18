@@ -68,5 +68,3 @@ Also known as a DMZ network, this acts as a "buffer zone" to allow regular inter
 | **Subnet** | A contiguous block of IP addresses that share the same network prefix (defined by a subnet mask / CIDR length); all hosts within that block belong to the same Layer-2 broadcast domain and can reach each other directly without traversing a router. |
 | **Subnet Mask** | A subnet mask is a 32-bit pattern marking the network bits of an IPv4 address, letting devices decide if traffic stays local or goes to a router. |
 | **FTP Server** | A (File Transfer Protocol) server is a computer which runs special sofware so people can upload/download files to it over the internet or private network. Allows central storage, and normally unencrypted. |
-
----
