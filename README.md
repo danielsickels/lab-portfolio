@@ -58,6 +58,8 @@ Act as a barrier and filter for incoming and outgoing traffic of packets based p
 
 Also known as a DMZ network, this acts as a "buffer zone" to allow regular internet visitors to reach and communicate; such as web servers, mail servers, FTP servers, and DNS. Internal LAN is never exposed this way.
 
+---
+
 ## Extra Key Terms
 
 | Term | Description |
