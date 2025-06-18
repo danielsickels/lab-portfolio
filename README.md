@@ -1,7 +1,5 @@
 # Lab Portfolio
 
-A quick-reference guide to two fundamental networking devices—**switches** and **routers**—plus key terms that show up in day-to-day conversations.
-
 ---
 
 ## Switch (Networking Hub)
