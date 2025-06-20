@@ -3,6 +3,7 @@
 ## Overview
 
 This guide outlines the **CompTIA A+ 220-1101 troubleshooting methodology** - a systematic 10-step process for resolving technical issues efficiently and effectively. This methodology ensures thorough problem resolution while maintaining system integrity and preventing future occurrences.
+Note: These steps are outlined in a course created by professor messer, provided via YouTube. An example we follow is illustrated within the video.
 
 ---
 
