@@ -1,5 +1,7 @@
 # Laptop Components Portfolio
 
+This is a deconstruction of an old personal laptop I had: Toshiba Satellite L750. Note, not all images shown here were on my original laptop; however, for ease of identification I used some additional images pulled from the internet - such as the first "cpu" image. My laptop used uses intel, depicted later for the chipset. See that I have arranged these components a light hierarchy of relevance, like the cpu and motherboard being first, below. Enjoy my breakdown/teardown:
+
 ## CPU (Central Processing Unit)
 
 ![Toshiba Satellite L750 CPU](../public/toshiba-satellite-L750-cpu2.png)
