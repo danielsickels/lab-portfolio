@@ -11,14 +11,6 @@
 5. [Monitoring & Alerting](#monitoring--alerting)
 6. [Maintenance Tips](#maintenance-tips)
 
-
----
-
-## Overview
-
-This guide documents how we turned a Dell **PowerEdge R730** into a single‑node Kubernetes host running **Rancher Kubernetes Engine v2 (RKE2)**.  
-It captures every decision—from disabling hardware RAID to wiring up Grafana dashboards—so future rebuilds are copy‑pasta simple.
-
 ---
 
 ## Pre‑Installation Checklist
