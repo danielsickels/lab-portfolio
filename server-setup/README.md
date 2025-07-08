@@ -59,8 +59,6 @@ Lifecycle Controller ➜ Remote Access ➜ Launch Console
 
 ### 5 . Install RKE2 (server mode)
 
-```
-
 ### 6 . Remote kubectl Access
 
 ### 7 . Registry Credentials (GitHub Container Registry)
@@ -87,4 +85,3 @@ Some internal DNS resolvers choke on long search domains:
 - **Prometheus Operator** (bundled charts)
 - **Grafana** dashboards
 - **Alertmanager** (email / Slack)
-```
