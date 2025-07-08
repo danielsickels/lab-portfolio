@@ -44,8 +44,25 @@ Lifecycle Controller ➜ Remote Access ➜ Launch Console
 - ```/etc/rancher/rke2/rke2.yaml```, which you can copy and save to ```~/.kube/config```. 
 - From here, make sure to point the config to your private IP of the server.
 
-### 5 . Registry Credentials (GitHub Container Registry)
-Reference it with `imagePullSecrets` in your manifests.
+### 5 . Registry Credentials (GHCR: GitHub Container Registry)
+- Using the following configuration file, this is set up at the node level to act as an auth for all ghcr image pulling.
+```
+mirrors:
+  <REGISTRY>:
+    endpoint:
+      - https://<REGISTRY>/v2
+configs:
+  <REGISTRY>:
+    auth:
+      username: <BASIC AUTH USERNAME>
+      password: <BASIC AUTH PASSWORD>
+      token: <BEARER TOKEN>
+    tls:
+      ca_file: <PATH TO SERVER CA>
+      cert_file: <PATH TO CLIENT CERT>
+      key_file: <PATH TO CLIENT KEY>
+      insecure_skip_verify: <SKIP TLS CERT VERIFICATION BOOLEAN>
+```
 
 ### 6 . DNS Ndots
 In order to avoid timeouts, set ndots: 1, to force the resolver to try the full domain first.
