@@ -5,13 +5,12 @@
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [Bill of Materials](#bill-of-materials)
-3. [Pre‑Installation Checklist](#pre-installation-checklist)
-4. [Step‑by‑Step Installation](#step-by-step-installation)
-5. [Core Cluster Add‑ons](#core-cluster-add-ons)
-6. [Monitoring & Alerting](#monitoring--alerting)
-7. [Maintenance Tips](#maintenance-tips)
-8. [Appendix A — Useful Commands](#appendix-a--useful-commands)
+2. [Pre‑Installation Checklist](#pre-installation-checklist)
+3. [Step‑by‑Step Installation](#step-by-step-installation)
+4. [Core Cluster Add‑ons](#core-cluster-add-ons)
+5. [Monitoring & Alerting](#monitoring--alerting)
+6. [Maintenance Tips](#maintenance-tips)
+
 
 ---
 
