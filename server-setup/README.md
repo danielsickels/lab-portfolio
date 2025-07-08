@@ -2,15 +2,6 @@
 
 ## Single‑node lab cluster on bare metal
 
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Pre‑Installation Checklist](#pre-installation-checklist)
-3. [Step‑by‑Step Installation](#step-by-step-installation)
-4. [Core Cluster Add‑ons](#core-cluster-add-ons)
-5. [Monitoring & Alerting](#monitoring--alerting)
-6. [Maintenance Tips](#maintenance-tips)
-
 ---
 
 ## Pre‑Installation Checklist
@@ -20,7 +11,7 @@
 - One NIC cabled for iDRAC, another for cluster traffic.
 - Ubuntu Server ISO downloaded (e.g. `ubuntu-24.04-live-server-amd64.iso`).
 - Java **OpenWebStart** installed on your laptop to launch `viewer.jnlp`.
-- SSH key pair ready (`~/.ssh/id_ed25519.pub`).
+- SSH key pair ready.
 
 ---
 
@@ -47,17 +38,19 @@ Lifecycle Controller ➜ Remote Access ➜ Launch Console
   - Select the **main NIC** and give it a static IP (e.g. `192.168.1.50`).
   - Check **openssh‑server** so SSH works on first boot.
 
-### 4 . Base System Hardening
+### 4 . Install RKE2 (server mode)
+Use the following:```https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-cluster-setup/rke2-for-rancher```
+The installer adds a kubeconfig at /etc/rancher/rke2/rke2.yaml
 
-### 5 . Install RKE2 (server mode)
-
-### 6 . Remote kubectl Access
-
-### 7 . Registry Credentials (GitHub Container Registry)
+### 5 . Registry Credentials (GitHub Container Registry)
 Reference it with `imagePullSecrets` in your manifests.
 
-### 8 . DNS Tweak
-Some internal DNS resolvers choke on long search domains:
+### 6 . DNS Ndots
+In order to avoid timeouts, set ndots: 1, to force the resolver to try the full domain first.
+```
+kubelet:
+  resolvConf: /etc/rancher/rke2/resolv.conf
+```
 
 ---
 
