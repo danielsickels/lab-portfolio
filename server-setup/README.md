@@ -24,7 +24,7 @@ Lifecycle Controller ➜ Remote Access ➜ Launch Console
 # Downloads viewer.jnlp
 ```
 
-> **Java tip:** If the console hangs or shows _ClassNotFound_, re‑download the `.jnlp` and whitelist the iDRAC host in `~/.config/icedtea-web/security`.
+> **Java tip:** If the console hangs or shows _ClassNotFound_, re‑download the `.jnlp` and whitelist the iDRAC host in `~/.config/icedtea-web/security`, if using icedtea.
 
 ### 2 . Switch PERC from RAID to HBA/JBOD
 
