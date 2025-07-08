@@ -39,9 +39,10 @@ Lifecycle Controller ➜ Remote Access ➜ Launch Console
   - Check **openssh‑server** so SSH works on first boot.
 
 ### 4 . Install RKE2 (server mode)
-Use the following:```https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-cluster-setup/rke2-for-rancher```
-The installer adds a kubeconfig at 
-```/etc/rancher/rke2/rke2.yaml```, which you can copy and save to ```~/.kube/config```. From here, make sure to point the config to your private IP of the server.
+- Use the following:```https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/kubernetes-cluster-setup/rke2-for-rancher```
+- The installer adds a kubeconfig at 
+- ```/etc/rancher/rke2/rke2.yaml```, which you can copy and save to ```~/.kube/config```. 
+- From here, make sure to point the config to your private IP of the server.
 
 ### 5 . Registry Credentials (GitHub Container Registry)
 Reference it with `imagePullSecrets` in your manifests.
